@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://t3.ftcdn.net/jpg/07/85/74/42/360_F_785744270_LQifGGW243aHeJwVGErMsD47S4LNStYJ.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px black;
+            max-width: 500px;
+            background-color: white;
+        }
+
+        form label {
+            display: inline-block;
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 40%;
+            padding: 10px;
+            background-color: #de95db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #218838;
+        }
+
+        h1 {
+            background-color: purple;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><b><i>REGISTRATION</i></b></h1>
+        <p><b>The wait is over!</b></p>
+        <form id="registerForm">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" />
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" />
+
+            <label for="addr">Location</label>
+            <textarea rows="2" cols="20" id="addr"></textarea> 
+
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" required>
+
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
+
